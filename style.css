@@ -1,0 +1,117 @@
+/* GENERAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@100&display=swap');
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main    {
+    min-height: 100vh;
+    display: grid  ;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+    /* background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position:  left -300px top -100px, right -250px bottom -600px;
+    overflow: hidden; */
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-bottom.svg) ;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-position:  700px 400px, 100px -400px;
+}
+
+.profile-card   {
+    width: 22rem;
+    height: 23rem;
+    display: grid;
+    grid-template-rows: 1fr 3rem 5.5rem 1fr;
+    align-self: center;
+    background-color: #fff;
+    border-radius: .8rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.pattern-card   {
+    width: 100%;
+    border-radius: .8rem .8rem 0 0;
+}
+
+.profile-img    {
+    justify-self: center;
+    border-radius: 50%;
+    border: solid 4px #fff;
+    position: relative;
+    transform: translate(0, -50%);
+}
+
+.profile-info   {
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    display: flex;
+    flex-flow: column ;
+    justify-items: center;;
+    
+}
+
+.profile-name    {
+    justify-self: center;
+    align-self: center;
+    font-weight: 700;
+    text-justify: center;
+    font-size: 1.1rem;
+    padding-bottom: .5rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile-name  span {
+    font-weight: 400;
+    position: relative; 
+    left: .4rem;
+    color: hsla(0, 0%, 59%); 
+}
+
+.info-place {
+    font-size: .85rem;
+    text-align: center;
+    color: hsla(0, 0%, 59%);   
+}
+
+.profile-info  br {
+    font-weight: 400;
+}
+
+.sm-info    {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.219);
+}
+
+.sm {
+    justify-self: center;
+    text-align: center;
+}
+
+.sm h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-bottom: .3rem;
+    color: hsl(229, 23%, 23%);
+}
+
+.sm p   {
+    font-size: .6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: hsla(0, 0%, 59%); 
+}
+
+@media screen and (max-width: 500px) {
+    main {
+      background-position: -400px -400px, -600px -400px;
+    }
+  }
